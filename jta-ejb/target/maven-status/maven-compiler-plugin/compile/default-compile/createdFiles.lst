@@ -1,0 +1,13 @@
+com\mycompany\interfaces\ClaseFacadeLocal.class
+com\mycompany\bean\ClaseFacade.class
+com\mycompany\transaccion\TransaccionLocal.class
+com\mycompany\entity\Clase.class
+com\mycompany\transaccion\Transaccion.class
+com\mycompany\interfaces\PersonaFacadeLocal.class
+com\mycompany\entity\Persona.class
+com\mycompany\bean\PersonaFacade.class
+com\mycompany\entity\Clase_.class
+com\mycompany\transaccion\Transaccion2Local.class
+com\mycompany\transaccion\Transaccion2.class
+com\mycompany\bean\AbstractFacade.class
+com\mycompany\entity\Persona_.class

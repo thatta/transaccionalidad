@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+
+
+        <h:form>
+            <p:growl id="msgs" showDetail="true"/>
+
+            <p:messages id="messages" />
+            <h:panelGrid columns="3" cellpadding="10" id="estudiante">
+
+                <p:outputLabel for="nombre" value="Nombre:" />
+                <p:inputText id="nombre" value="#{index.nombre}"   >
+                    
+                </p:inputText>
+                <p:message for="nombre" />
+
+                <p:outputLabel for="nombrec" value="Nombre Clase:" />
+                <p:inputText id="nombrec" value="#{index.nombreC}"   >
+                    
+                </p:inputText>
+                <p:message for="nombrec" />
+                
+                <p:commandButton value="Request" action="#{index.agregar()}" update="@form" />
+                <p:commandButton value="RequestNew" action="#{index.requestnew()}" update="@form" />
+                <p:commandButton value="Supports" action="#{index.supports()}" update="@form" />
+                <p:commandButton value="Mandatory" action="#{index.mandatory()}" update="@form" />
+                <p:commandButton value="NotSupport" action="#{index.notsupport()}" update="@form" />
+                <p:commandButton value="Never" action="#{index.never()}" update="@form" />
+                <br/><br/>
+                <p:commandButton value="Request Transaccional" action="#{index.agregarTransReq()}" update="@form" />
+                <p:commandButton value="RequestNew Transaccional" action="#{index.agregarTransReqNew()}" update="@form" />
+                <p:commandButton value="Supports Transaccional" action="#{index.agregarTransSup()}" update="@form" />
+                <p:commandButton value="Mandatory Transaccional" action="#{index.agregarTransMand()}" update="@form" />
+                <p:commandButton value="NotSupport Transaccional" action="#{index.agregarTransNotSup()}" update="@form" />
+                <p:commandButton value="Never Transaccional" action="#{index.agregarTransNever()}" update="@form" />
+            </h:panelGrid>
+        </h:form>
+
+
+
+
+    </h:body>
+</html>
+
